@@ -24,9 +24,7 @@ int isEvenOdd(int &po){
     }
 }
 
-    int
-    sum()
-{
+    int sum(){
     int a, b, c, po, f;
     cout << "enter the 1 numbers";
     cin >> a;
@@ -39,8 +37,9 @@ int isEvenOdd(int &po){
     {
         po = another(d);
          fac(po);
-       isEvenOdd(po)
+       isEvenOdd(po);
     }
+    return po;
 }
 
 int main()
