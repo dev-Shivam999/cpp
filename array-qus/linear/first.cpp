@@ -1,50 +1,46 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 void count(vector<int> &arr)
 {
-    int inc=0;
+    int inc = 0;
     for (int i = 0; i < arr.size(); i++)
-    {  
+    {
 
-        if (arr[i] >400)
+        if (arr[i] > 400)
         {
             inc++;
         }
-        
     }
 
-    cout<<"total above "<<inc<<endl;
-      
+    cout << "total above " << inc << endl;
 }
 
-void endWithZero(vector<int> &arr){
+void endWithZero(vector<int> &arr)
+{
 
-int count = 0;
+    int count = 0;
     for (int i = 0; i < arr.size(); i++)
     {
-       if (arr[i] %10== 0)
-       {
-        count++;
-       }
-       
-    }
-    cout<<"total end with zero "<<count<<endl;
-}
-
-void ff(vector<int> &arr){
-    for (int i = 0; i < arr.size(); i++)
-    {
-        if (arr[i]<200)
+        if (arr[i] % 10 == 0)
         {
-         cout<<i;
-         break;   
+            count++;
         }
-        
     }
-    
+    cout << "total end with zero " << count << endl;
 }
-    void
-    first()
+
+void ff(vector<int> &arr)
+{
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] < 200)
+        {
+            cout << i;
+            break;
+        }
+    }
+}
+void first()
 {
     vector<int> arr = {4000};
     int sum = 0;
@@ -59,91 +55,89 @@ void ff(vector<int> &arr){
     else if (sum == 5000)
     {
         endWithZero(arr);
-   
-     }
-     else{
+    }
+    else
+    {
         ff(arr);
-     }
+    }
 }
 
-void separates(vector<int>&arr){
+void separates(vector<int> &arr)
+{
 
-    vector<int>five={};
-    vector<int>non={};
+    vector<int> five = {};
+    vector<int> non = {};
 
     for (int i = 0; i < arr.size(); i++)
     {
-        if (arr[i]%5==0)
+        if (arr[i] % 5 == 0)
         {
             five.push_back(arr[i]);
-        }else{
+        }
+        else
+        {
             non.push_back(arr[i]);
         }
-        
     }
-    
 
     for (int i = 0; i < five.size(); i++)
     {
         /* code */
-        cout<<five[i]<<" "<<endl;
+        cout << five[i] << " " << endl;
     }
 
-    cout<<"not 5"<<endl;
+    cout << "not 5" << endl;
     for (int i = 0; i < non.size(); i++)
     {
-        cout<<non[i]<<" "<<endl;
+        cout << non[i] << " " << endl;
     }
-    
-    
 }
 
-   
-void sl(vector<int>&arr){
-    vector<int>gre={};
+void sl(vector<int> &arr)
+{
+    vector<int> gre = {};
     for (int i = 0; i < arr.size(); i++)
     {
-        if (arr[i]>50)
+        if (arr[i] > 50)
         {
             gre.push_back(arr[i]);
         }
-        
     }
 
-    cout<<gre[gre.size()-1]<<endl;
-    
+    cout << gre[gre.size() - 1] << endl;
 }
 
-
-void sb(vector<int>&arr){
+void sb(vector<int> &arr)
+{
     for (int i = 0; i < arr.size(); i++)
     {
-        if (arr[i]>20)
+        if (arr[i] > 20)
         {
-           cout<<i;
-           break;
+            cout << i;
+            break;
         }
-        
     }
-    
 }
-    void
-    second()
+void second()
 {
     vector<int> arr = {500};
     int pro = 1;
     for (int i = 0; i < arr.size(); i++)
     {
-        pro*=arr[i];
-     }
-     if (pro>1500)
-     {
+        pro *= arr[i];
+    }
+    if (pro > 1500)
+    {
         separates(arr);
-     }else if(pro==1500){
+    }
+    else if (pro == 1500)
+    {
         sl(arr);
-     }else{
+    }
+    else
+    {
         sb(arr);
-     }
+    }
 }
 
 int countWeeksOver45(const vector<int> &hours)
@@ -176,10 +170,11 @@ int sumOfHours(const vector<int> &hours)
     return accumulate(hours.begin(), hours.end(), 0);
 }
 
-void third(){
+void third()
+{
 
-    vector<int> hours = {42, 50, 38, 45}; 
-      double average = accumulate(hours.begin(), hours.end(), 0) / static_cast<double>(hours.size());
+    vector<int> hours = {42, 50, 38, 45};
+    double average = accumulate(hours.begin(), hours.end(), 0) / static_cast<double>(hours.size());
 
     if (average > 40)
     {
@@ -205,18 +200,415 @@ void third(){
     }
 }
 
+vector<int> FOUR(vector<int> &arr)
+{
+    vector<int> squar(arr.size());
+    for (int i = 0; i < arr.size(); i++)
+    {
+        squar[i] = arr[i] * arr[i];
+    }
+    return {squar};
+}
+int FourCheck(vector<int> &arr, int &a)
+{
+    int counts = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] == a)
+        {
+            counts++;
+        }
+    }
+    return counts;
+}
+int FourSlow(vector<int> &arr)
+{
+    int counts = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] > 500)
+        {
+            counts++;
+        }
+    }
+    return counts;
+}
+
+void four()
+{
+    int sum = 0;
+    vector<int> arr(10);
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "enter the number" << "\n";
+        cin >> arr[i];
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        sum = sum + arr[i];
+    }
+    cout << "sum  number is" << " " << sum << "\n";
+
+    if (sum > 12000)
+    {
+        int a = FourSlow(arr);
+        cout << "counts the number that are above 500:" << " " << a << "\n";
+    }
+    else if (sum < 12000)
+    {
+        int a;
+        cout << "enter the number\n";
+        cin >> a;
+        int b = FourCheck(arr, a);
+        cout << "the number of occurrences of a specific sale amount:" << " " << b << "\n";
+    }
+
+    else
+    {
+        vector<int> ans = FOUR(arr);
+        cout << "each amount is squared:" << "\n";
+        for (auto it : ans)
+        {
+
+            cout << it << " ";
+        }
+        cout << "\n";
+    }
+}
+
+int asd(vector<int> &arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        while (arr[i] > 0)
+        {
+            sum += arr[i] % 10;
+            arr[i] /= 10;
+        }
+    }
+    return sum;
+}
+int check(vector<int> &arr)
+{
+    int index = -1;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] < 10)
+        {
+            index = i;
+            break;
+        }
+    }
+    return index;
+}
+int slow(vector<int> &arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] > 30)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+void five()
+{
+    int sum = 0;
+    int avg;
+    vector<int> arr(10);
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "enter the number" << "\n";
+        cin >> arr[i];
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        sum = sum + arr[i];
+        avg = sum / 10;
+    }
+    cout << "average number is" << " " << avg << "\n";
+
+    if (avg > 20)
+    {
+        int a = slow(arr);
+        cout << "counts the number of items with discounts over 30%:" << " " << a << "\n";
+    }
+    else if (avg < 20)
+    {
+        int b = check(arr);
+        cout << "first occurrence of an item with a discount below 10%:" << " " << b << "\n";
+    }
+    else
+    {
+        int c = asd(arr);
+        cout << " sum of the digits of the discounts:" << " " << c << "\n";
+    }
+}
+
+void fiveCount(vector<int> &arr)
+{
+
+    int count = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] > 600)
+        {
+            count++;
+        }
+    }
+
+    cout << count;
+}
+
+void totalCount(vector<int> &arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+
+        count += arr[i];
+    }
+}
+void fFive(vector<int> &arr)
+{
+
+    for (int i = 0; i < arr.size(); i++)
+    {
+
+        if (arr[i] < 300)
+        {
+            cout << i;
+            break;
+            /* code */
+        }
+    }
+}
+
+void six()
+{
+    vector<int> arr = {1400};
+    int sum = 0;
+    for (auto i : arr)
+    {
+        sum += i;
+    }
+    if (sum > 500)
+    {
+        fiveCount(arr);
+    }
+    else if (sum == 500)
+    {
+        totalCount(arr);
+    }
+    else
+    {
+        fFive(arr);
+    }
+}
 
 
-void four(){
+ void moreThan(vector<int> &arr){
+    int count = 0;
+for (int i = 0; i < arr.size(); i++)
+{
+    if (arr[i] > 15, 000)
+    {
+       count++;
+    }
+    
+}
+cout<<count;
+
+ }
+
+void LessSix(vector<int> &arr){
+    for (int i = 0; i <arr.size(); i++)
+    {
+        if (arr[i] < 8, 000)
+        {
+            cout<<i;
+            break;
+        }
+        
+    }
+    
+}
+
+void seven()
+{
+
+    vector<int> arr = { 100,
+                        000 } ;
+                        int sum = 0;
+    for (auto i : arr)
+    {
+        sum+=i;
+    }
+    if (sum > 100, 000)
+    {moreThan(arr);
+        
+    }
+    else
+    {
+LessSix(arr);
+    }
+}
+
+
+
+void multi(vector<int>&arr){
+
+    vector <int>t={};
+    vector <int>nt={};
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]% 25==0 )
+        {
+           t.push_back(arr[i]);
+        }
+        else{
+            nt.push_back(arr[i]);
+        }
+        }
+    
+    for(auto i:t){
+        cout<<i;
+    }
+    for(auto i:nt){
+        cout<<i;
+    }
+}
+void above(vector<int> &arr)
+{
+
+    vector <int>t={};
+    vector <int>nt={};
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]>500 )
+        {
+           t.push_back(arr[i]);
+        }
+        
+        }
+    
+    
+    cout<<t[t.size()-1];
+}
+void Ef(vector<int> &arr)
+{
+
+ 
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]<100 )
+        {
+          cout<<i;
+          break;
+        }
+        
+        }
+    
+    
+  
+}
+
+ void Eight(){
+
+vector<int>arr={12,12,12,1,21,2,12,1,2};
+
+
+int p=1;
+for(auto i:arr){
+    p*=i;
+}
+
+if (p > 2000)
+{
+    multi(arr);
+}else if(p==2000){
+above(arr);
+}else{
+    Ef(arr);
+}
+
+ }
+
+ void exceeding(vector<int>&arr){
+
+int count=0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]>70)
+        {
+            count++;
+            /* code */
+        }
+        
+    }
+    cout<<count;
+    
+ }
+
+void vehicleB(vector<int>&arr){
+
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]<50)
+        {
+            cout<<i;
+            break;
+        }
+        
+    }
+    
+}
+
+
+     void
+     NINE()
+ {
+
+     vector<int> arr = {1, 2, 3, 4, 5};
+     int sum = 0;
+     for (auto i : arr)
+     {
+         sum += i;
+     }
+     sum=sum/arr.size();
+     if (sum > 60)
+     {
+         exceeding(arr);
+     }else {
+         vehicleB(arr);
+     }
+ }
+
+
+void ten(){
+
+
 
 }
 
-int main(){
+int main()
+{
 
     // first();
     // second();
     // third();
-    four();
+    // four();
+    // five();
+    // six();
 
-        return 0;
+    // seven();
+    // Eight();
+    // NINE();
+    // ten();
+
+    return 0;
 }
