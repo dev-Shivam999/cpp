@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "b:/web dev/desktop/RNS/c++/array/set",
-      "program": "b:/web dev/desktop/RNS/c++/array/set/build/Debug/outDebug",
+      "cwd": "b:/web dev/desktop/RNS/c++/array-qus",
+      "program": "b:/web dev/desktop/RNS/c++/array-qus/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

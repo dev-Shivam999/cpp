@@ -42,24 +42,43 @@ for (int i = 0; i <= size - 1; i++)
     cout<<"array value : "<<s[i]<<endl;
 }
 
+// for (int i = 0; i < size; i++)
+// {
+//     if (s[i]%2==0 )
+//     {
+        
+//     cout<<"array value even : "<<s[i]<<endl;
+//     }
+    
+// }
+
+// for (int i = 0; i < size; i++)
+// {
+//     if (s[i] % 2 != 0)
+//     {
+
+//         cout << "array value odd : " << s[i] << endl;
+//     }
+// }
+
+int min=s[0],max=s[0];
+int se;
 for (int i = 0; i < size; i++)
 {
-    if (s[i]%2==0 )
+    if (min>s[i])
     {
-        
-    cout<<"array value even : "<<s[i]<<endl;
+        min=s[i];
     }
+    if (max<s[i]){ 
+        se=max;
+        max=s[i];
+        }
+
     
 }
 
-for (int i = 0; i < size; i++)
-{
-    if (s[i] % 2 != 0)
-    {
+cout<<min<<" "<<se<<" "<<max<<endl;
 
-        cout << "array value odd : " << s[i] << endl;
-    }
-}
 
 cout<<"array sum : "<<sum;
 
