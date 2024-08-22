@@ -588,12 +588,37 @@ void vehicleB(vector<int>&arr){
      }
  }
 
+ void inc(vector<int> &arr){
 
-void ten(){
+    count=0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i]>600)
+        {
+            /* code */
+            count+=i;
 
+        }
+        
+    }
+    
+    cout<<count;
+ }
 
-
-}
+     void
+     ten()
+ {
+     vector<int> arr = {21212};
+     int sum = 0;
+     for (auto i : arr)
+     {
+         sum += i;
+     }
+     if (sum > 500)
+     {
+         inc(arr);
+     }
+ }
 
 int main()
 {
