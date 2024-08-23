@@ -3,7 +3,13 @@ using namespace std;
 
 int main()
 {
+
     // vector<int> arr = {1, 1, 2, 1, 2, 0, 2, 1, 0, 1, 2, 0, 1, 2, 1, 2, 1, 0, 0};
+
+  
+    
+    
+    
     // vector<string> arr2 = {"red",
     //                        "green",
     //                        "blue",
@@ -114,21 +120,21 @@ int main()
 
     // cout << o << " " << b << " " << c;
 
-    vector<float> weight = {55.45, 55.45, 55.45, 55.45, 50, 54.66, 56.44};
-    for (int i = 0; i < weight.size(); i++)
-    {
-        if (weight[i] >55.50)
-        {
-            weight[i]=60;
-        }
-        if(weight[i] <55.50){
-            weight[i]=50;
-        }
+    // vector<float> weight = {55.45, 55.45, 55.45, 55.45, 50, 54.66, 56.44};
+    // for (int i = 0; i < weight.size(); i++)
+    // {
+    //     if (weight[i] >55.50)
+    //     {
+    //         weight[i]=60;
+    //     }
+    //     if(weight[i] <55.50){
+    //         weight[i]=50;
+    //     }
         
-    }
-    for(auto i:weight){
-        cout<<i<<' ';
-    }
+    // }
+    // for(auto i:weight){
+    //     cout<<i<<' ';
+    // }
 
     return 0;
 }
