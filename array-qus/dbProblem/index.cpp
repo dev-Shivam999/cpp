@@ -59,19 +59,19 @@ int main()
 
   // 1 2 3 4 5 7 9 13
 
-  // int p = 1, q = 2, r = 3, s = 4, t;
-  // cout << p << " " << q << " " << r << " " << s << " ";
+  int p = 1, q = 2, r = 3, s = 4, t;
+  cout << p << " " << q << " " << r << " " << s << " ";
 
-  // for (int i = 4; i < 10; i++)
+  for (int i = 4; i < 10; i++)
 
-  // {
-  //   t = p + s;
-  //   cout << t << " ";
-  //   p = q;
-  //   q = r;
-  //   r = s;
-  //   s = t;
-  // }
+  {
+    t = q + r;
+    cout << t << " ";
+    p = q;
+    q = r;
+    r = s;
+    s = t;
+  }
 
   return 0;
 }
