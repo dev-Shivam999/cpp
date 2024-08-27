@@ -66,8 +66,7 @@ int main()
 
   {
     t = q + r;
-    cout << t << " ";
-    p = q;
+    cout<<t<<" ";
     q = r;
     r = s;
     s = t;
