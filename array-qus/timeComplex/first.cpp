@@ -20,4 +20,3 @@ int main(){
         // s =1 3 6 10 15
     return 0;
 }
-
