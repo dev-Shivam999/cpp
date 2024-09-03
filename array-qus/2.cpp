@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-
-
-return 0;
+    int a = pow(16, 2);
+                cout
+            <<a ;
+    return 0;
 }
