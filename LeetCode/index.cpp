@@ -149,26 +149,44 @@ int main()
     // int no =1+ min(a, 24 * 60 - mini[mini.size() - 1] + mini[0]);
     // cout << no << endl;
 
-    int num = 0;
-    int n=10;
+    // int n = 20;
 
-vector<int>kk(num,0);
+    // if (n <= 2)
+    // {
+    //     return 0;
+    // }
+    // vector<int> ver(n, 0);
+    // ver[0] = ver[1] = 1;
 
+    // for (int i = 2; i < n; i++)
+    // {
+    //     for (int j = 2; j < i; j++)
+    //     {
 
-    for (int i = 2; i <n; i++)
-    {
-        for (int j = 2; j <=n; j++)
-        {
-            if (/* condition */)
-            {
-                /* code */
-            }
-            
-            
-        }
+    //         if (i % j == 0)
+    //         {
+
+    //             if (j != 1)
+    //             {
+    //                 ver[i] = 1;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // for (int i = 0; i < ver.size(); i++)
+    // {
+    //  if (ver[i] !=1)
+    //  {
+    //        cout<<ver[i]<<" "<<i<<endl;
+    //     /* code */
+     
         
-       
-    }
-cout<<num<<endl;
-    // return 0;
+    //  }
+        
+        
+    // }
+
+    return 0;
 }
