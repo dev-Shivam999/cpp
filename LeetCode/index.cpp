@@ -181,12 +181,25 @@ int main()
     //  {
     //        cout<<ver[i]<<" "<<i<<endl;
     //     /* code */
-     
-        
+
     //  }
-        
-        
+
     // }
+//        int n = 6464;
+//    int rem=0;
+//     while (n > 4)
+//     {
+//         int p = 0; rem = 0;
+//         while (n > 0)
+//         {
+//             p = n % 10;
+//             rem = rem + p * p;
+//             n /= 10;
+//         }
+//         n = rem;
+//         cout << n << endl;
+//     }
+//     cout << rem << endl;
 
     return 0;
 }
