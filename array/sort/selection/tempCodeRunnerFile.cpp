@@ -1,3 +1,5 @@
-        // int temp = arr[j];
-        // arr[j] = arr[index];
-        // arr[index] = temp;
+ for (auto i : arr)
+           {
+               cout << i << " ";
+           }
+           cout << endl;
