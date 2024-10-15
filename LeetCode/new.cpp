@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+
 int main()
 {
 
@@ -196,27 +198,129 @@ int main()
     //     cout<<orn[i]<<'\n';
 
     // }
-int a=100,b=999,c=500;
+// int a=100,b=999,c=500;
 
-    if (a < b&&b< c)
-    {
-        cout << b << "lol";
-    }
-    else if (c < b&&b < a)
-    {
-        cout << b << "\n";
-    }
-    else if (a < c&&c < b)
-    {
-        cout << c << "\n";
-    }
-    else if (b < a&&a < c){
-        cout << a << "\n";}
-    else if (c < a&&a < b){
-        cout << a << "\n";}
-    else if (b < c&&c < a){
-        cout << c << "\n";}
+//     if (a < b&&b< c)
+//     {
+//         cout << b << "lol";
+//     }
+//     else if (c < b&&b < a)
+//     {
+//         cout << b << "\n";
+//     }
+//     else if (a < c&&c < b)
+//     {
+//         cout << c << "\n";
+//     }
+//     else if (b < a&&a < c){
+//         cout << a << "\n";}
+//     else if (c < a&&a < b){
+//         cout << a << "\n";}
+//     else if (b < c&&c < a){
+//         cout << c << "\n";}
  
 
-    return 0;
+// vector<int>arr;
+// arr.pop_back()
+
+    // int sum = 0;
+    // string s = "MCMXCIV";
+    // for (int i = 0; i < s.length(); i++)
+    // {
+    //     if (s[i] == 'I')
+    //     {
+    //         sum += 1;
+    //     }
+    //     else if (s[i] == 'V')
+    //     {
+    //         sum += 5;
+    //     }
+    //     else if (s[i] == 'X')
+    //     {
+    //         sum += 10;
+    //     }
+    //     else if (s[i] == 'L')
+    //     {
+    //         sum += 50;
+    //     }
+    //     else if (s[i] == 'C')
+    //     {
+    //         sum += 100;
+    //     }
+    //     else if (s[i] == 'D')
+    //     {
+    //         sum += 500;
+    //     }
+    //     else
+    //     {
+    //         sum += 1000;
+    //     }
+    // }
+    // cout<<sum;
+//     vector<int> ar = { 1,
+//                        3,
+//                        2,
+//                        6,
+//                        1,
+//                        2 } ;
+//                        int count = 0,k=3,
+//                 n = 6;
+//     for (int i = 0; i < ar.size(); i++)
+//     {
+//         for (int j = i + 1; j <ar.size(); j++)
+//         {
+          
+//             int sum = ar[i] + ar[j];
+//              if (sum == k || sum % k == 0)
+//             {
+//                 count++;
+//             }
+//         }
+            
+//     }
+// cout<<count;
+    // vector<int> arr = {1, 4 ,4 ,4 ,5 ,3}; vector<int> lol(arr.size(), 0);
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     lol[arr[i]]++;
+    // }
+    // int min = 1;
+    // for (int i = 1; i < lol.size(); i++)
+    // {
+    //     if (lol[i] > lol[min])
+    //     {
+    //         min = i;
+    //     }
+    //     if (lol[i] == lol[min] && i < min)
+    //     {
+    //         min = i;
+    //     }
+    // }
+    // int c = lol[min];
+    // cout<<c<<" "<<min;
+
+    // vector<int> nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
+    // int val = 2 ;
+    // vector<int> bill = { 3 ,10 ,2 ,9 };
+    //  int sum = 0,k=1,b=12;
+    // for (int i = 0; i < bill.size(); i++)
+    // {
+    //     if (bill[k] != bill[i])
+    //     {
+    //         sum += bill[i];
+    //     }
+    // }
+
+    // if (sum - b == 0)
+    // {
+    //     cout << "Bon Appetit";
+    // }
+    // else
+    // {
+    //     cout << sum - b;
+    // }
+
+
+return 0;
+
 }
