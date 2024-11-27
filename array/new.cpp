@@ -2,12 +2,17 @@
 using namespace std;
 
 int main(){
-int arr[3]={1,2,3};
-int count=0;
-for (int i = 0; i < 3; i++)
+int arr[6]={1,2,3,3,2,3};
+int count=5;
+for (int i = 0; i < 4; i++)
 {
-   if(arr[i]==4) count++;
+  swap(arr[i],arr[count]);
+  count--;
 }
-cout<<count;
+for (int i = 0; i < 6; i++)
+{
+ cout<<arr[i];
+}
+
 return 0;
 }
