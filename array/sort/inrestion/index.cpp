@@ -7,7 +7,7 @@ int main()
     vector<int> arr = {2, 1, 5, 9, 3, 6, 4};
     for (int i = 1; i < arr.size(); i++)
     {
-  
+  int k=arr[i];
 
         for (int j = i - 1; j >= 0; j--)
         {
