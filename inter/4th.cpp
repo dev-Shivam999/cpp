@@ -86,6 +86,10 @@ int main()
     // }else{
     //     cout<<"nhi hua";
     // }
+
+
+
+    // cout<<sizeof()
     
     return 0;
 }
