@@ -4,38 +4,25 @@ using namespace std;
 int main()
 {
 
-    vector<int> A = {1, 3, 5,8,9};
+//
 
-    vector<int> B = {2, 4, 6,7};
-    vector<int> C;
-    int j = 0;
-    int i = 0;
-    while (i < A.size()&& j < B.size())
-    {
-        if (A[i] < B[j])
-        {
-            C.push_back(A[i]);
-            i++;
-        }
-        else
-        {
-            C.push_back(B[j]);
-            j++;
-        }
-    }
-    while (j < B.size()){
-C.push_back(B[j]);
-        j++;
-    }
-    while (i < A.size()){
-C.push_back(A[i]);
-        i++;
-    }
-
-    for (auto it : C)
-    {
-        cout << it << " ";
-    }
-
-    return 0;
+int arr[] = { 10,
+            20,
+            30,
+            40,
+            50 };
+            int p=3;
+            int size=sizeof(arr)/sizeof(arr[0]);
+            
+            for (int i =p ; i <size-1 ; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            
+            for (int i = 0; i <size-1; i++)
+            {
+                cout<<arr[i]<<" ";
+            }
+            
+             return 0;
 }
