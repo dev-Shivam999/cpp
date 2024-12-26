@@ -43,9 +43,9 @@ for (int i = 0; i < 5; i++)
     arr8[i] = arr7[i];
 }
 
+// 
 
-
-
+// 
 
 return 0;
 }
