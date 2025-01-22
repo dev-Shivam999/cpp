@@ -4,13 +4,13 @@ using namespace std;
 struct Re
 {
     int Pos;
-    char Vowel;
+    string Vowel;
 };
 
 vector<Re> Find(string &str)
 {
     int Pos = -1;
-    char Vowel;
+    string Vowel=" ";
     for (int i = 0; i < str.size(); i++)
     {
         if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
